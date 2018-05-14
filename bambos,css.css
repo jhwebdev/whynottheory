@@ -1,0 +1,246 @@
+* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			margin: 1px;
+			padding: 1px;
+		}
+		
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-rows:  auto;
+			background-image: url("girl-street.jpeg");
+			height: 900px;
+			color:white;
+		
+		
+		grid-template-areas: "header header header header header header"
+		"seek seek seek seek seek seek"
+		
+		
+			}
+			
+			.header {
+				display: flex;
+				grid-area: header;
+				justify-content: space-between;
+				width: 100%;
+				
+			}
+			
+			.pic {
+				margin: 40px;
+			}
+			.links {
+				
+				color: gray;
+				font-size: 20pt;
+				padding: 40px;
+				margin: 30px;
+			}
+			.links a {
+				color: #6E6E6E;
+				text-decoration: none;
+				padding: 14px 16px;
+			}	
+			.links a:hover{
+				color: white;
+				font-size: 25pt;
+			}
+			a.active {
+			background-color: #4CAF50;
+			color: white;
+			}
+			
+			.seek {
+				font-size: 60pt;	
+				justify-content:center;
+				font-family: 'Patua One', cursive;
+				font-family: 'Chau Philomene One', sans-serif;
+				grid-area: seek;
+				display: flex;
+			}
+			
+	
+	.grid-container-1 {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows:  auto;
+				background-color: white;
+				color: black;
+				
+			
+			grid-template-areas: "text text text"
+			
+		
+}
+	
+		.text {
+			grid-area: text;
+			font-size: 25pt;
+			text-align: center;
+			color: black;
+			font-family: 'Patua One', cursive;
+			font-family: 'Chau Philomene One', sans-serif;
+			display: flex;
+			height: 600px;
+			justify-content: center;
+			align-items: center;
+			
+			line-height: 80px;
+		}
+		
+
+	.grid-container-info {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: auto;
+			height: 700px;
+			
+		grid-template-area: "head head head"
+							"expl expl expl";
+	}
+	
+		.head {
+			grid-area: head;
+			font-size: 20pt;
+			font-family: 'Patua One', cursive;
+			font-family: 'Chau Philomene One', sans-serif;
+			padding-bottom: 30px;
+			padding-left: 20px;
+		}
+			
+	
+		.expl {
+			grid-area: expl;
+			font-size: 16pt;
+			font-family: 'Patua One', cursive;
+			font-family: 'Chau Philomene One', sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: left;
+			padding: 30px;
+			margin: 40px;
+		}
+		
+	.grid-container-contact {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr)
+		grid-template-row: auto;
+		
+		grid-template-areas: "form form form"
+	}
+	
+		.form {
+			display: flex;
+			grid-area: form;
+			justify-content: center;
+			align-items: center;
+			font-size: 30pt;
+			padding: 25px;
+		}
+			
+		
+	
+	.grid-container-pictures {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows:  auto;
+				height: 400px;
+				background-color:white;
+				
+				
+				
+			grid-template-areas: "pic pic pic"
+			
+	}
+
+		.pics {
+			
+			display: flex;
+			grid-area: pic;
+			justify-content: center;
+			align-items: center;
+			height: 400px;
+			width: 100%;
+			flex-wrap: wrap;
+		}
+	.container {
+	max-width: 700px;
+	position: center;
+	margin: auto;
+	padding: 50px;
+}
+
+		.mySlides {
+			display: none;
+			
+		}
+
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 180%;
+			width: auto;
+			margin-top: 50px;
+			padding: 20px;
+			color: black;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			
+		}
+		.prev {
+			left: 25%;
+		}
+		.next {
+			right: 25%;
+			border-radius: 3px 0 0 3px;
+		}
+
+		.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+		}
+
+		
+
+		
+
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+			background-color: #717171;
+		}
+
+
+	
+	.footer {
+				
+			   left: 0;
+			   bottom: 0;
+			   width: 100%;
+			   height: 150px;
+			   background-color: black;
+			   color: white;
+			   text-align: center;
+			   position: static;
+
+			}	
+	
+	
+
+	
+		
+	
