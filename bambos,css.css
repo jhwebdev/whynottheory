@@ -1,5 +1,6 @@
 * {
 			box-sizing: border-box;
+			
 		}
 		
 		body {
@@ -8,11 +9,15 @@
 		}
 		
 		.grid-container {
+			
 			display: grid;
 			grid-template-columns: repeat(6, 1fr);
 			grid-template-rows:  auto;
 			background-image: url("girl-street.jpeg");
-			height: 900px;
+			
+			background-size: cover;
+			height: 1000px;
+			width: 100%;
 			color:white;
 		
 		
@@ -21,6 +26,46 @@
 		
 		
 			}
+			@media screen and (max-width:400px) {
+				.grid-container {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-template-row: auto;
+					background-image: url("girl-street.jpeg");
+					height: 600px;
+					width: 100%;
+					color: white; 
+					grid-template-areas: "header header"
+					"seek seek"
+				}
+				
+				.links {
+					grid-area: header;
+					padding: 0px;
+					margin: 0px;
+					
+				}
+				
+				.container {
+					max-width: 100%;
+				}
+				
+				.seek {
+					font-size: 20pt;
+					text-align: center;
+				}
+			
+				
+				
+				
+			}
+			
+			@media screen and (max-width: 1200px) {
+				.footer {
+					display: none;
+				}
+			}
+									
 			
 			.header {
 				display: flex;
@@ -32,13 +77,16 @@
 			
 			.pic {
 				margin: 40px;
+				width: 100%;
+				justify-content: bottom;
+				
 			}
 			.links {
 				
 				color: gray;
 				font-size: 20pt;
-				padding: 40px;
-				margin: 30px;
+				padding: 0px;
+				margin: 40px;
 			}
 			.links a {
 				color: #6E6E6E;
@@ -97,7 +145,7 @@
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: auto;
-			height: 700px;
+			height: 50%;
 			
 		grid-template-area: "head head head"
 							"expl expl expl";
@@ -139,7 +187,7 @@
 			justify-content: center;
 			align-items: center;
 			font-size: 30pt;
-			padding: 25px;
+			padding: 35px;
 		}
 			
 		
@@ -167,12 +215,13 @@
 			width: 100%;
 			flex-wrap: wrap;
 		}
-	.container {
-	max-width: 700px;
-	position: center;
-	margin: auto;
-	padding: 50px;
-}
+		
+		.container {
+		max-width: 60%;
+		position: center;
+		margin: auto;
+		padding: 50px;
+		}
 
 		.mySlides {
 			display: none;
@@ -184,7 +233,7 @@
 			position: absolute;
 			top: 180%;
 			width: auto;
-			margin-top: 50px;
+			margin-top: 60px;
 			padding: 20px;
 			color: black;
 			font-weight: bold;
@@ -194,10 +243,10 @@
 			
 		}
 		.prev {
-			left: 25%;
+			left: 20%;
 		}
 		.next {
-			right: 25%;
+			right: 20%;
 			border-radius: 3px 0 0 3px;
 		}
 
@@ -236,6 +285,7 @@
 			   color: white;
 			   text-align: center;
 			   position: static;
+			   min-width: 600px;
 
 			}	
 	
